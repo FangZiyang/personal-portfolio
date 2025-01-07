@@ -60,7 +60,7 @@ export const Skills = () => {
                     Programming & Frameworks:
                   </strong>
                   <p style={{ margin: 0, color: '#e0e0e0', width: '100%' }}>
-                    Java, Spring Boot, SSM framework, Spring Framework, React.js
+                  Java, Python, C++, Spring Boot, SSM framework, Spring Framework, React.js
                   </p>
                 </div>
 
@@ -87,7 +87,7 @@ export const Skills = () => {
                     Middleware & Databases:
                   </strong>
                   <p style={{ margin: 0, color: '#e0e0e0', width: '100%' }}>
-                    Redis, RabbitMQ, Kafka, MySQL, NoSQL
+                  MySQL, NoSQL, Redis, RabbitMQ, Kafka, ElasticSearch 
                   </p>
                 </div>
 
@@ -114,7 +114,7 @@ export const Skills = () => {
                     Architectures & Tools:
                   </strong>
                   <p style={{ margin: 0, color: '#e0e0e0', width: '100%' }}>
-                    Microservices, RPC, REST APIs, Full-Stack Development, Unit Testing, Git
+                  Docker, AWS, Service Mesh	, RPC, REST APIs, Unit Testing, Git, Swagger, Linux, multithreaded programming, JVM
                   </p>
                 </div>
               </div>
