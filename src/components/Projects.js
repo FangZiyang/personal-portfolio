@@ -25,17 +25,17 @@ export const Projects = () => {
     // },
     {
       title: "E-commerce Platform",
-      description: "Frontend & Backend",
+      // description: "Frontend & Backend",
       imgUrl: card2,
     },
     {
       title: "Mobile App",
-      description: "React Native Development",
+      // description: "React Native Development",
       imgUrl: card3,
     },
     {
       title: "Cloud Integration",
-      description: "AWS & DevOps",
+      // description: "AWS & DevOps",
       imgUrl: card4,
     },
   ];
@@ -43,17 +43,17 @@ export const Projects = () => {
   const projects2 = [
     {
       title: "E-commerce Platform",
-      description: "Frontend & Backend",
+      // description: "Frontend & Backend",
       imgUrl: skill1,
     },
     {
       title: "Mobile App",
-      description: "React Native Development",
+      // description: "React Native Development",
       imgUrl: skill2,
     },
     {
       title: "Cloud Integration",
-      description: "AWS & DevOps",
+      // description: "AWS & DevOps",
       imgUrl: skill3,
     },
   ];
@@ -61,17 +61,17 @@ export const Projects = () => {
   const projects3 = [
     {
       title: "E-commerce Platform",
-      description: "Frontend & Backend",
+      // description: "Frontend & Backend",
       imgUrl: parkingcompose,
     },
     {
       title: "Mobile App",
-      description: "React Native Development",
+      // description: "React Native Development",
       imgUrl: qrpc,
     },
     {
       title: "Cloud Integration",
-      description: "AWS & DevOps",
+      // description: "AWS & DevOps",
       imgUrl: flashsell,
     },
   ];

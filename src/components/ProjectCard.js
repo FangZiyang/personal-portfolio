@@ -11,12 +11,12 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         {/* 显示项目图片 */}
         <img src={imgUrl} alt={`${title} Thumbnail`} />
         {/* 图片上的文字信息层 */}
-        <div className="proj-txtx">
+        {/* <div className="proj-txtx"> */}
           {/* 项目标题 */}
-          <h4>{title}</h4>
+          {/* <h4>{title}</h4> */}
           {/* 项目描述 */}
-          <span>{description}</span>
-        </div>
+          {/* <span>{description}</span> */}
+        {/* </div> */}
       </div>
     </Col>
   )
