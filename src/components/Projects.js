@@ -88,7 +88,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                  <p>A collection of high-performance microservices, enterprise-grade applications, and innovative personal projects demonstrating expertise in full-stack development and system architecture.</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -103,9 +103,9 @@ export const Projects = () => {
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
-                        <div style={{ lineHeight: '1.8', color: '#e0e0e0', fontSize: '1rem' }}>
-                          <h3 style={{ color: '#ffffff', fontWeight: 'bold' }}>Core Developer, Product List Microservice</h3>
-                          <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+                        <div className="project-content">
+                          <h3>Core Developer, Product List Microservice</h3>
+                          <ul>
                             <li>
                               <strong>Standardized item display logic</strong> by maintaining a microservice managing <strong>30+ interfaces</strong>, reducing system redundancy and ensuring consistency across business scenarios.
                             </li>
@@ -127,9 +127,9 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                      <div style={{ lineHeight: '1.8', color: '#e0e0e0', fontSize: '1rem' }}>
-                          <h3 style={{ color: '#ffffff', fontWeight: 'bold' }}>Core Developer, Flash Sale Microservice</h3>
-                          <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+                        <div className="project-content">
+                          <h3>Core Developer, Flash Sale Microservice</h3>
+                          <ul>
                             <li>
                               <strong>Developed Redis-based static fallback mechanisms</strong> to prevent blank pages under <strong>high-concurrency</strong> scenarios, improving system reliability and delivering a seamless shopping experience.
                             </li>
@@ -151,30 +151,17 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <div
-                          style={{
-                            lineHeight: "1.8",
-                            color: "#e0e0e0",
-                            fontSize: "1rem",
-                          }}
-                        >
-                          <h3
-                            style={{
-                              color: "#ffffff",
-                              fontWeight: "bold",
-                              marginBottom: "1.5rem",
-                            }}
-                          >
+                        <div className="project-content">
+                          <h3>
                             Personal Projects
                           </h3>
-                          <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc" }}>
+                          <ul>
                             <li>
                               <strong>Smart Parking System:</strong>{" "}
                               <a
                                 href="https://github.com/CAS735-F24/group-project-t1"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: "#00aced" }}
                               >
                                 GitHub Repository
                               </a>
@@ -199,7 +186,6 @@ export const Projects = () => {
                                 href="https://github.com/CodeinMac/qrpc"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: "#00aced" }}
                               >
                                 GitHub Repository
                               </a>
@@ -225,7 +211,6 @@ export const Projects = () => {
                                 href="https://github.com/FangZiyang/Seckill-Developer-and-Maintainer-Mall"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                style={{ color: "#00aced" }}
                               >
                                 GitHub Repository
                               </a>

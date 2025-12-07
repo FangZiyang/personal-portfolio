@@ -1,21 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-// import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import './App.css';
+import './index.css';
+import { Navigation } from './components/Navigation';
+import { Hero } from './components/Hero';
+import { BentoGrid } from './components/BentoGrid';
+import { Experience } from './components/Experience';
+import { Education } from './components/Education';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      {/* <Contact /> */}
+      <Navigation />
+      <Hero />
+      <Experience />
+      <Education />
+      <BentoGrid />
       <Footer />
     </div>
   );

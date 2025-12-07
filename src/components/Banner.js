@@ -53,96 +53,31 @@ export const Banner = () => {
   };
 
   return (
-    // 主 Banner 区域
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
-          {/* 左侧文字部分 */}
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  {/* 欢迎文字 */}
                   <span className="tagline">Welcome to my Portfolio</span>
-                  {/* 标题，带动态文字效果 */}
                   <h1>
                     {`Hi! I'm Ryan(Ziyang)`}{' '}
-                    <br /> 
-                    <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "Backend Developer" ]'
-                      style={{
-                        fontSize: '2rem', // 动态文字字体大小
-                        fontWeight: 'bold', // 加粗动态文字
-                        color: '#ffffff', // 颜色
-                        whiteSpace: 'nowrap', // 防止换行
-                      }}
-                    >
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "Backend Developer" ]'>
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
 
-                  {/* 描述部分 */}
-                  <div style={{ lineHeight: '1.8', fontSize: '1rem', color: '#e0e0e0' }}>
-                    <p style={{ marginBottom: '1.2rem' }}>
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        • Master of Engineering
-                      </span>, Computer and Software student eligible for a&nbsp;
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                          4 – 12-month Co-op
-                      </span> position as of&nbsp;
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        May 2025
-                      </span>.
-                    </p>
+                  <p>
+                    Master of Engineering student specializing in distributed systems and backend development.
+                    Experienced in building scalable microservices with Spring Boot, Redis, and RabbitMQ.
+                    Previously at Meituan.
+                  </p>
 
-                    <p style={{ marginBottom: '1.2rem' }}>
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        • Software Developer
-                      </span> with experience at
-                      <span style={{ fontWeight: 'bold', color: '#8a2be2' }}>
-                        Meituan
-                      </span>, a top-tier tech company in China, demonstrating strong foundational skills in software development and teamwork.
-                    </p>
-
-                    <p style={{ marginBottom: '1.2rem' }}>
-                      • Technical expertise in&nbsp;
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        distributed systems
-                      </span>, Spring Boot, microservices architecture, and high-concurrency system design, with hands-on experience in
-                      <span style={{ fontWeight: 'bold', color: '#8a2be2' }}>
-                        Redis
-                      </span> and
-                      <span style={{ fontWeight: 'bold', color: '#8a2be2' }}>
-                        RabbitMQ
-                      </span>, for optimized backend solutions.
-                    </p>
-
-                    <p style={{ marginBottom: '1.2rem' }}>
-                      • Developed&nbsp;
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#007bff' }}>
-                        qRPC
-                      </span>, an open-source RPC framework inspired by&nbsp;
-                      <span style={{ fontWeight: 'bold', color: '#007bff' }}>
-                        gRPC
-                      </span>, and collaborated on team projects like&nbsp;
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        e-commerce flash sale systems
-                      </span> and
-                      <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffffff' }}>
-                        parking management systems
-                      </span>.
-                    </p>
-                  </div>
-
-                  {/* 按钮 */}
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
             </TrackVisibility>
           </Col>
-
-          {/* 右侧图片部分 */}
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>

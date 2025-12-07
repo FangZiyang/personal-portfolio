@@ -44,7 +44,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container> {/* 用于对齐和间距的容器 */}
           <Navbar.Brand href="/"> {/* 品牌 logo */}
-            <img src={logo} alt="Logo" style={{ width: "360px", height: "auto" }} /> {/* 显示 logo 图片 */}
+            <img src={logo} alt="Logo" /> {/* 显示 logo 图片 */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav"> {/* 移动端的导航切换按钮 */}
             <span className="navbar-toggler-icon"></span> {/* 切换按钮的图标 */}
@@ -63,6 +63,12 @@ export const NavBar = () => {
                 className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('skills')}> {/* 技能链接 */}
                 Skills
+              </Nav.Link>
+              <Nav.Link
+                href="#experience"
+                className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'}
+                onClick={() => onUpdateActiveLink('experience')}> {/* 经历链接 */}
+                Experience
               </Nav.Link>
               <Nav.Link
                 href="#projects"
