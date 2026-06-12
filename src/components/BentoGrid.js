@@ -19,7 +19,7 @@ export const BentoGrid = () => {
               data-reveal-delay={idx * 70}
               key={group.title}
             >
-              <div className="bento__icon">
+              <div className={`bento__icon bento__icon--${group.hue || 'indigo'}`}>
                 <CategoryIcon name={group.icon} width={22} height={22} />
               </div>
               <h3 className="bento__title">{group.title}</h3>

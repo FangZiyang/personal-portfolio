@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { navSections, profile } from '../data';
 import { useActiveSection, useScrollProgress } from '../hooks';
+import { RollingText } from './RollingText';
 import { LinkedIn, Github } from '../icons';
 
 const scrollToId = (id) => {
@@ -49,23 +50,23 @@ export const Navigation = () => {
             {navSections.map((s) => (
               <button
                 key={s.id}
-                className={`nav__link ${active === s.id ? 'is-active' : ''}`}
+                className={`nav__link roll-trigger ${active === s.id ? 'is-active' : ''}`}
                 onClick={() => go(s.id)}
               >
-                {s.label}
+                <RollingText text={s.label} />
               </button>
             ))}
           </div>
 
           <div className="nav__actions">
-            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="nav__icon" aria-label="LinkedIn">
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="nav__icon magnetic" aria-label="LinkedIn">
               <LinkedIn width={17} height={17} />
             </a>
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="nav__icon" aria-label="GitHub">
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="nav__icon magnetic" aria-label="GitHub">
               <Github width={17} height={17} />
             </a>
-            <button className="nav__cta" onClick={() => go('contact')}>
-              Let's talk
+            <button className="nav__cta magnetic roll-trigger" onClick={() => go('contact')}>
+              <RollingText text="Let's talk" />
             </button>
           </div>
 

@@ -9,7 +9,7 @@ const ProjectCard = ({ p, idx }) => {
   const hasImages = images.length > 0;
 
   return (
-    <div className="card project-card reveal" data-reveal-delay={idx * 80}>
+    <div className="card project-card tilt reveal" data-reveal-delay={idx * 80}>
       {hasImages ? (
         <button className="project-card__cover" onClick={() => setShot(0)} aria-label={`View ${p.title} screenshots`}>
           <img src={`${process.env.PUBLIC_URL}/${images[0]}`} alt={p.title} loading="lazy" />
@@ -18,7 +18,7 @@ const ProjectCard = ({ p, idx }) => {
           </span>
         </button>
       ) : (
-        <div className="project-card__head">
+        <div className="project-card__head" style={p.accent ? { background: p.accent } : undefined}>
           <span className="project-card__mono">{p.mono}</span>
           <span className="project-card__glyph">{p.mono}</span>
         </div>
